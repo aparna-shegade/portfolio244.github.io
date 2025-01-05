@@ -34,6 +34,103 @@
 <body>
     <h1>Algorithms and Data Structures</h1>
     
+    <h1>Time Complexity and Data Structures</h1>
+
+    <h2>Time Complexity Analysis</h2>
+    <p>Time complexity analysis is essential for evaluating the efficiency of algorithms by measuring how their runtime or resource usage scales with the input size. Big-O notation is commonly used to describe the worst-case, average-case, and best-case performance. This helps in comparing algorithms and choosing the most efficient one for a given problem.</p>
+    <ul>
+        <li><strong>Types</strong>: Best-case, worst-case, average-case, and amortized complexities.</li>
+        <li><strong>Applications</strong>: Algorithm optimization, performance comparison, and scalability assessment.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Binary Search Tree (BST)</h2>
+    <p>Binary Search Trees (BSTs) are hierarchical data structures where each node's left child contains smaller values, and the right child contains larger values. Balanced BSTs, such as AVL or Red-Black trees, provide logarithmic time complexity (<span class="algorithm-title">O(log n)</span>) for operations like search, insertion, and deletion, making them suitable for dynamic sets and dictionary applications.</p>
+    <ul>
+        <li><strong>Types</strong>: Standard BST, AVL Tree, Red-Black Tree, Splay Tree.</li>
+        <li><strong>Applications</strong>: Dynamic sets, range queries, and database indexing.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Depth-First Search (DFS)</h2>
+    <p>Depth-First Search (DFS) is a graph traversal technique that explores as far as possible along each branch before backtracking. With a time complexity of <span class="algorithm-title">O(V + E)</span>, where <strong>V</strong> is the number of vertices and <strong>E</strong> is the number of edges, DFS is widely used in applications such as cycle detection, finding connected components, and topological sorting.</p>
+    <ul>
+        <li><strong>Types</strong>: Recursive DFS, Iterative DFS.</li>
+        <li><strong>Applications</strong>: Maze solving, dependency resolution, and connectivity analysis.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Breadth-First Search (BFS)</h2>
+    <p>Breadth-First Search (BFS) explores all nodes at the current depth level before moving to the next level. It also has a time complexity of <span class="algorithm-title">O(V + E)</span> and is commonly used to find the shortest path in unweighted graphs, detect bipartite graphs, and solve problems in network flow.</p>
+    <ul>
+        <li><strong>Types</strong>: Standard BFS, Bidirectional BFS.</li>
+        <li><strong>Applications</strong>: Shortest path algorithms, level-order traversal, and network analysis.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Heap</h2>
+    <p>A heap is a complete binary tree that satisfies the heap property, where the parent node is either greater (max heap) or smaller (min heap) than its children. Heaps support efficient priority queue operations with <span class="algorithm-title">O(log n)</span> complexity and are integral to algorithms like Dijkstra’s and heap sort. Building a heap from an array can be done in <span class="algorithm-title">O(n)</span> time.</p>
+    <ul>
+        <li><strong>Types</strong>: Max Heap, Min Heap, Binomial Heap, Fibonacci Heap.</li>
+        <li><strong>Applications</strong>: Priority queues, resource scheduling, and graph algorithms.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Sorting Algorithms</h2>
+    <p>Sorting algorithms are used to arrange data in a specific order. Merge Sort and Quick Sort offer <span class="algorithm-title">O(n log n)</span> efficiency and are widely used in practice. Non-comparison-based methods like Radix Sort and Counting Sort achieve linear time complexity for specific scenarios. Efficient sorting is crucial for preprocessing and optimizing data retrieval.</p>
+    <ul>
+        <li><strong>Types</strong>: 
+            <ul>
+                <li>Comparison-Based: Merge Sort, Quick Sort, Bubble Sort, Insertion Sort.</li>
+                <li>Non-Comparison-Based: Counting Sort, Radix Sort, Bucket Sort.</li>
+            </ul>
+        </li>
+        <li><strong>Applications</strong>: Preprocessing, search optimization, and graphics rendering.</li>
+    </ul>
+
+    <hr>
+
+    <h2>String Matching and Pattern Searching</h2>
+    <p>String matching algorithms are designed to find patterns within text efficiently. Advanced techniques like Knuth-Morris-Pratt (KMP) and Rabin-Karp improve upon naive methods with time complexities of <span class="algorithm-title">O(n + m)</span>, where <strong>n</strong> is the text length and <strong>m</strong> is the pattern length. These algorithms are widely applied in text processing, search engines, and bioinformatics.</p>
+    <ul>
+        <li><strong>Types</strong>: Naive Approach, Knuth-Morris-Pratt (KMP), Rabin-Karp, Boyer-Moore.</li>
+        <li><strong>Applications</strong>: Text editors, DNA sequencing, and spam filters.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Graph Algorithms</h2>
+    <p>Graph algorithms solve problems like finding shortest paths, minimum spanning trees, and network flows. Dijkstra’s algorithm efficiently computes shortest paths in weighted graphs with <span class="algorithm-title">O((V + E) log V)</span> complexity, while Kruskal’s and Prim’s algorithms construct minimum spanning trees in <span class="algorithm-title">O(E log V)</span>. These algorithms are critical in applications like routing, network design, and optimization.</p>
+    <ul>
+        <li><strong>Types</strong>: 
+            <ul>
+                <li>Shortest Path: Dijkstra’s, Bellman-Ford, Floyd-Warshall.</li>
+                <li>Minimum Spanning Tree: Kruskal’s, Prim’s.</li>
+                <li>Maximum Flow: Ford-Fulkerson, Edmonds-Karp.</li>
+            </ul>
+        </li>
+        <li><strong>Applications</strong>: Transportation, telecommunications, and social network analysis.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Stacks and Queues</h2>
+    <p>Stacks and queues are fundamental data structures that manage ordered data. Stacks follow a Last In, First Out (LIFO) principle, while queues operate on a First In, First Out (FIFO) basis. These structures support efficient <span class="algorithm-title">O(1)</span> operations for push, pop, enqueue, and dequeue, making them indispensable in tasks like backtracking, parsing, and scheduling.</p>
+    <ul>
+        <li><strong>Types</strong>: 
+            <ul>
+                <li>Stacks: Standard Stack, Double-Stack Implementation.</li>
+                <li>Queues: Simple Queue, Circular Queue, Priority Queue, Deque (Double-Ended Queue).</li>
+            </ul>
+        </li>
+        <li><strong>Applications</strong>: Expression evaluation, task scheduling, and breadth-first search.</li>
+    </ul>
+    
     <h2>Space and Time Efficiency</h2>
     <p><strong>Importance of Analyzing Algorithmic Complexity</strong></p>
     <p>Analyzing algorithm complexity ensures scalability and efficient handling of larger data. For example, bubble sort has <span class="algorithm-title">O(n²)</span>, while merge sort has <span class="algorithm-title">O(n log n)</span>.</p>
@@ -288,3 +385,7 @@ int main() {
     <p>Learning how to break down complex problems into smaller components allows for better problem-solving and optimization. Balancing optimization with simplicity ensures maintainability while delivering efficient solutions. Adapting solutions across different challenges involves choosing the right algorithm for the problem at hand.</p>
 </body>
 </html>
+
+
+
+
